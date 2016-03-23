@@ -1,0 +1,199 @@
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+
+    background: #555;
+}
+
+.scroll::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+    background-color: #f5f5f5;
+}
+
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+
+    background: rgba(156, 133, 76, 0.48);
+}
+
+.wrapper {
+    width: 800px;
+
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: " ";
+
+    display: table;
+}
+
+#historyMsg {
+    height: 600px;
+
+    border: 1px solid #928052;
+    border-right-style: none;
+    margin-top: 10px;
+
+    overflow-y: scroll;
+}
+
+#historyMsg p {
+    width: 95%;
+
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+
+    color: #000;
+
+    background: #fff;
+}
+
+#historyMsg p:first-child {
+    margin-top: 0;
+}
+
+#historyMsg p:last-child {
+    margin-bottom: 0;
+}
+
+#historyMsg img {
+    max-width: 90%;
+}
+
+
+.controls {
+    position: relative;
+
+    margin-top: 10px;
+}
+
+#emojiWrapper {
+    display: none;
+
+    position: absolute;
+
+    width: 90%;
+
+    border-radius: 5px;
+    margin-top: -150px;
+
+    background: #B3A278;
+}
+
+#emojiWrapper img {
+    width: 25px;
+    height: 25px;
+
+    padding: 2px;
+    margin: 2px;
+}
+
+#emojiWrapper img:hover {
+    background: #524B1F;
+
+    cursor: pointer;
+}
+
+input {
+    padding: 9px;
+    border: 1px solid #928052;
+    border-radius: 5px;
+    outline: none;
+
+    background: transparent;
+
+    transition: all .4s;
+}
+
+input:hover,
+input:focus {
+    border-color: #A58C4F;
+    box-shadow: 0 0 15px #A58C4F;
+}
+
+input:not([id=nicknameInput]):hover,
+input:not([id=nicknameInput]):focus {
+    color: #A58C4F;
+
+    cursor: pointer;
+}
+
+#colorStyle {
+    padding: 5px;
+
+    vertical-align: bottom; /* 与右边的 controls 底部对齐 */
+}
+
+#sendImage {
+    padding: 7px;
+
+    background: transparent;
+}
+
+textarea {
+    width: 83%;
+    height: 150px;
+
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #928052;
+    margin-top: 10px;
+    outline: none;
+
+    background: #CFC4A9;
+
+    vertical-align: bottom; /* 消除与父元素之间的空白间隙 */
+    transition: all .7s;
+}
+
+textarea:focus {
+    border-color: #A58C4F;
+    box-shadow: 0 0 15px #A58C4F;
+}
+
+#sendBtn {
+    width: 10%;
+    height: 150px;
+
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+
+/*
+ * loginWrapper 部分
+ */
+
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-top: 200px;
+
+    color: #fff;
+    text-align: center;
+
+    background-color: rgba(5, 5, 5, 0.6);
+}
+
+#nickWrapper {
+    display: none;
+}
+
+#nickWrapper input {
+    color: #fff;
+}

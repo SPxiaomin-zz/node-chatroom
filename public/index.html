@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>chat-room by node(express4.x) + socket.io</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>Chat、Chat、Chat，gogogo~~~</h1>
+            <span id="status">0 user online</span>
+        </div>
+
+        <div id="historyMsg" class="scroll"></div>
+
+        <div class="controls">
+            <div id="emojiWrapper">
+            </div>
+            <div class="items">
+                <input id="colorStyle" type="color" placeholder="#000" title="font color">
+
+                <input id="emoji" type="button" value="emoji" title="emoji">
+
+                <label for="sendImage" class="imageLabel">
+                    <input id="sendImage" type="file">
+                </label>
+
+                <input id="clearBtn" type="button" value="clear">
+            </div>
+
+            <textarea id="messageInput" placeholder="press enter to send"></textarea>
+            <input id="sendBtn" type="button" value="SEND">
+
+        </div>
+    </div>
+
+    <div id="loginWrapper">
+        <p id="info">connecting to server...</p>
+        <div id="nickWrapper">
+            <input id="nicknameInput" type="text" placeholder="nickname">
+            <input type="button" value="OK" id="loginBtn">
+        </div>
+    </div>
+
+    <script src="./javascripts/socket.js"></script>
+    <script src="./javascripts/index.js"></script>
+</body>
+</html>
