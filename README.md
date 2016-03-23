@@ -1,5 +1,9 @@
 # node(express) + socket.io 聊天室
 
+## 最终效果
+
+<img src="./effect.png" alt="最终效果图">
+
 ## 制作总结
 
 ### 页面样式处理总结
